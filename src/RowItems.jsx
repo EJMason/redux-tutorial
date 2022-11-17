@@ -5,7 +5,7 @@ import { map } from 'lodash';
 export function ItemsRowsContainer() {
   // TODO: Add Redux integration Here
 
-  // TODO: Create a selector to get the items in the cart
+  // TODO: Create a selector to get the items in the cart. Set it to the items variable
   const items = [];
 
   return (

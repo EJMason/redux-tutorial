@@ -1,5 +1,6 @@
 import { createReducer, createSelector } from '@reduxjs/toolkit';
 import { find } from 'lodash';
+import currency from 'currency.js';
 import { foodItems } from './data/inventory';
 
 const defaultState = {
@@ -35,4 +36,8 @@ const selectInCart = (state) => state.groceries.inCart;
  */
 function findFoodItemById(id) {
   return find(foodItems, ['id', id]);
+}
+
+function formatCurrency(v) {
+  return currency(v).format();
 }

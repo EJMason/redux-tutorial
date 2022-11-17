@@ -11,8 +11,8 @@ export function SubTotalsContainer() {
         <Text fz="xl">{formatCurrency('$0.00')}</Text>
       </Flex>
       <Flex {...getFlex()}>
-        <Text fz="xl">Tax</Text>
-        <Text fz="xl">7.00%</Text>
+        <Text fz="xl">Tax (7%)</Text>
+        <Text fz="xl">{formatCurrency('$0.00')}</Text>
       </Flex>
       <Flex {...getFlex()}>
         <Divider style={{ width: '300px' }} my="sm" />
